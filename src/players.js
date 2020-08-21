@@ -5,6 +5,12 @@ const Player = (name, marker) => ({
   history: [],
 });
 
+const makePlayer = ()=>{
+  return {
+    
+  }
+}
+
 // set players for the game
 function setPlayers(allplayers) {
   const form = document.querySelector('.name-form');
@@ -50,4 +56,5 @@ function setPlayers(allplayers) {
 }
 
 
-export default setPlayers;
+
+export  {setPlayers, Player};

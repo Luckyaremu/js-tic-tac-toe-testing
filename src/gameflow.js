@@ -1,5 +1,5 @@
 /* eslint-disable   import/extensions */
-import setPlayers from './players.js';
+import {setPlayers} from './players.js';
 import gameboard from './gamelogic.js';
 
 
@@ -13,6 +13,7 @@ function gameFlow() {
   form.submitbtn.addEventListener('click', (e) => {
     e.preventDefault();
     allplayers = setPlayers(allplayers);
+    
 
     if (allplayers) {
       const node = document.createElement('LI');

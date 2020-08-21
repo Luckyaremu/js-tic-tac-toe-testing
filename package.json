@@ -1,15 +1,16 @@
 {
-  "name": "weather-me",
+  "name": "js-tic-tac-toe-testing",
   "version": "1.0.0",
-  "description": "A basic JavaScript To do app for creating tasks and adding to do's ",
+  "description": "Jest test for the Tic Tac Toe JavaScript Game ",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "serve": "webpack --mode development"
+    "serve": "webpack --mode development",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kelibst/Weather-me.git"
+    "url": "git+https://github.com/kelibst/js-tic-tac-toe-testing.git"
   },
   "keywords": [
     "JavaScript",
@@ -19,9 +20,9 @@
   "author": "kelibst",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kelibst/Weather-me/issues"
+    "url": "https://github.com/kelibst/js-tic-tac-toe-testing/issues"
   },
-  "homepage": "https://github.com/kelibst/Weather-me#readme",
+  "homepage": "https://github.com/kelibst/js-tic-tac-toe-testing#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
@@ -32,6 +33,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.4.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
