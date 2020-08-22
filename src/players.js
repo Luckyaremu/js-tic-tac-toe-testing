@@ -5,25 +5,19 @@ const Player = (name, marker) => ({
   history: [],
 });
 
-const makePlayer = ()=>{
-  return {
-    
-  }
-}
+const setPlayers = (allplayers) => ({
+  form: document.querySelector('.name-form'),
+  marker: 'X',
 
-// set players for the game
-function setPlayers(allplayers) {
-  const form = document.querySelector('.name-form');
-  let marker;
-  allplayers.length < 1 ? marker = 'X' : marker = '0';
-
-  // create player
-  allplayers.push(Player(form.inputspace.value, marker));
-
-  form.inputspace.value = '';
-
-  // display player
-  if (allplayers) {
+  setMarker() {
+    allplayers.length < 1 ? this.marker = 'X' : this.marker = '0';
+    return this.marker;
+  },
+  createPlayer() {
+    allplayers.push(Player(this.form.inputspace.value, this.marker));
+    return allplayers;
+  },
+  displayPlayer() {
     const node = document.createElement('LI');
 
     node.innerText = '';
@@ -38,7 +32,7 @@ function setPlayers(allplayers) {
 
     // empty the input field
 
-    form.inputspace.value = '';
+    this.form.inputspace.value = '';
 
     if (allplayers.length >= 2) {
       const table = document.querySelector('.table-container');
@@ -47,14 +41,18 @@ function setPlayers(allplayers) {
       formInput.classList.add('d-none');
       table.classList.remove('d-none');
       playerturn.innerHTML = `${allplayers[0].name} Turn!`;
-    }else if(allplayers.length === 1){
+    } else if (allplayers.length === 1) {
       const aibtn = document.querySelector('.ai');
       aibtn.classList.remove('d-none');
     }
-  }
-  return allplayers;
-}
+  },
+  getPlayers() {
+    this.marker = this.setMarker();
+    this.createPlayer();
+    this.form.inputspace.value = '';
+    this.displayPlayer();
+    return allplayers;
+  },
+});
 
-
-
-export  {setPlayers, Player};
+export { setPlayers, Player };

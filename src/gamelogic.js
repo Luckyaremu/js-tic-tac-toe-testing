@@ -47,7 +47,6 @@ function gameboard() {
           if (player.history.includes(win2.toString())) {
             winCounter += 1;
 
-
             if (winCounter === 3) {
               won = true;
             }
@@ -76,6 +75,5 @@ function gameboard() {
     },
   };
 }
-
 
 export default gameboard;

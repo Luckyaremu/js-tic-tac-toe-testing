@@ -17,42 +17,41 @@
 
 ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg) 
 
-# Weather-me
-
-> A weather forecast site using the weather API. Created with JavaScript.
-Read more on the project specifications on [Odin](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
+# js-tic-tac-toe-testing
 
 
-- Loads weather Content directly to the page using Javascript.
-- Loads the weather for Accra when the page loads.
-- User can search for a location and the weather is diplayed for the location.
-- Displays related search for city
-- Responsive
+> In this project, we built the test for a TIC TAC TOE game using Jest. 
+Where Users can:
 
+- Introduce the name of the players.
+- The game is played on a grid that's 3 squares by 3 squares.
+- You are X, your friend is O. Players take turns putting their marks in empty squares.
+- The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
+- When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie
 
 #  Screenshot
-![screenshot](./dist/assets/images/screenshot.gif)
+![screenshot](./dist/assets/image/screenshot1.png)
 
 
 # Live Demo
-[Live Demo Link](https://heuristic-hopper-7e6e01.netlify.app/)
+[Live Demo Link](https://angry-borg-90b651.netlify.app/)
 
 # Built With
 
 - JavaScript
-- Babel
-- WebPack
 - HTML5
 - CSS3
 
+### Usage
+ Install dependencies and Run test
+- npm install
+- npm test
+- open src folder and add more specific tests
 
-# usage
-visit live [link](https://heuristic-hopper-7e6e01.netlify.app/) in your browser.
 
 
 
-
-
+# Authors
 
 ## Author
 
@@ -63,12 +62,15 @@ visit live [link](https://heuristic-hopper-7e6e01.netlify.app/) in your browser.
 - Linkedin: [Kekeli (Jiresse) Dogbevi
 ](https://www.linkedin.com/in/kekeli-dogbevi-jiresse/)
 
+👤 **Author2**
+Aremu Lucky
+
+- Github: [@githubhandle](https://github.com/Luckyaremu)
+- Twitter: [@twitterhandle](@luckyaremu)
+- Linkedin: [linkedin]()
 
 # 🤝 Contributing
 Contributions, issues and feature requests are welcome!
-
-
-Design inspiration from [Arthur K](https://dribbble.com/shots/7118235-Weather-DailyUI-037)
 
 Feel free to check the issues page
 
